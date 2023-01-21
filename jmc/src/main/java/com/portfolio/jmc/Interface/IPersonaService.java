@@ -6,19 +6,21 @@ import java.util.List;
 
 
 public interface IPersonaService {
-    //traer una lista de Persona
-    public List<Persona> getPersona();
-    
-    //Guardar un objeto Persona
-    public void savePersona(Persona persona);
-    
-    //Eliminar un objeto
-    
-    public void deletePersona(Long id);
-    
-    // buscar una persona
-    public Persona findPersona (Long id);
-    
-    
-    
+ 
+    public List<Persona> getPesonas();
+ 
+ 
+ public void savePersona(Persona persona);
+     
+ 
+ 
+ public void deletePersona(Long id);
+
+ 
+ 
+ public Persona findPersona(Long id);
+ 
+     
+     
+ 
 }
