@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("explab")
+@RequestMapping("/explab")
 @CrossOrigin(origins = "http://localhost:4200")
 public class CExperiencia {
     @Autowired
@@ -45,7 +45,9 @@ public class CExperiencia {
         return new ResponseEntity(list, HttpStatus.OK);
         
     }
+    
     @PostMapping("/create")
+    
     public ResponseEntity<?> create(@RequestBody DtoExperiencia dtoexp){
         if (StringUtils.isBlank(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.OK);
@@ -57,7 +59,9 @@ public class CExperiencia {
         
         return new ResponseEntity(new Mensaje ("Experiencia agregada"), HttpStatus.OK);
     }
+  
     @PutMapping("/update/{id}")
+      
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody DtoExperiencia dtoexp){
         if(!sExperiencia.existsById(id))
             return new ResponseEntity(new Mensaje("El id no existe"),HttpStatus.BAD_REQUEST);
@@ -74,7 +78,9 @@ public class CExperiencia {
         sExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"),HttpStatus.OK);
     }
+    
     @DeleteMapping("/delete/{id}")
+    
     public ResponseEntity<?> delete(@PathVariable("id") int id){
          if(!sExperiencia.existsById(id))
             return new ResponseEntity(new Mensaje("El id no existe"),HttpStatus.BAD_REQUEST);
