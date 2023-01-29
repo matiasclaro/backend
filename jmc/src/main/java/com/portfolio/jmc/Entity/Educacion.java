@@ -16,6 +16,12 @@ public class Educacion {
     private String nombreE;
     private String descripcionE;
 
+    public Educacion() {
+    }
+
+    
+    
+    
     public Educacion(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
