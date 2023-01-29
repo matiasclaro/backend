@@ -1,4 +1,4 @@
-FROM amazoncorretto:8-alpine-jdk
-MAINTAINER josematiasclaro
-COPY target/jmc-0.0.1-SNAPSHOT.jar jmc-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/jmc-0.0.1-SNAPSHOT.jar"]
+FROM amazoncorretto:11-alpine-jdk
+MAINTAINER JMC
+COPY target/jmc-0.0.1-SNAPSHOT jmc-app.jar
+ENTRYPOINT ["java","-jar","/jmc-app.jar"]
