@@ -43,6 +43,7 @@ public class PersonaController {
     return "la persona fue eliminada correctamente";
     }
     @PreAuthorize("hasRole('ADMIN')")
+    
     @PutMapping ("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
@@ -60,6 +61,6 @@ public class PersonaController {
     
         @GetMapping("/personas/traer/perfil")
         public Persona findPersona(){
-            return ipersonaService.findPersona((long)3);
+            return ipersonaService.findPersona((long)1);
         }
 }
