@@ -1,8 +1,10 @@
 com\portfolio\jmc\Security\MainSecurity.class
+com\portfolio\jmc\Controller\CHys.class
 com\portfolio\jmc\Security\Service\RolService.class
 com\portfolio\jmc\Security\Dto\LoginUsuario.class
 com\portfolio\jmc\Service\SExperiencia.class
 com\portfolio\jmc\Dto\DtoExperiencia.class
+com\portfolio\jmc\Dto\DtoPersona.class
 com\portfolio\jmc\Entity\Persona.class
 com\portfolio\jmc\Security\Entity\UsuarioPrincipal.class
 com\portfolio\jmc\Entity\Experiencia.class
@@ -11,7 +13,6 @@ com\portfolio\jmc\Repository\REducacion.class
 com\portfolio\jmc\Entity\Educacion.class
 com\portfolio\jmc\Security\Jwt\JwtProvider.class
 com\portfolio\jmc\Security\Repository\iUsuarioRepository.class
-com\portfolio\jmc\Interface\IPersonaService.class
 com\portfolio\jmc\Security\Controller\Mensaje.class
 com\portfolio\jmc\Security\Jwt\JwtTokenFilter.class
 com\portfolio\jmc\Security\Dto\NuevoUsuario.class
@@ -23,11 +24,15 @@ com\portfolio\jmc\WebConfig.class
 com\portfolio\jmc\Security\Entity\Usuario.class
 com\portfolio\jmc\Security\Enums\RolNombre.class
 com\portfolio\jmc\Service\SEducacion.class
+com\portfolio\jmc\Service\Shys.class
+com\portfolio\jmc\Repository\Rhys.class
+com\portfolio\jmc\Dto\DtoHys.class
 com\portfolio\jmc\Repository\IPersonaRepository.class
 com\portfolio\jmc\Security\Entity\Rol.class
 com\portfolio\jmc\Controller\CEducacion.class
 com\portfolio\jmc\Controller\CExperiencia.class
 com\portfolio\jmc\Controller\PersonaController.class
+com\portfolio\jmc\Entity\hys.class
 com\portfolio\jmc\JmcApplication.class
 com\portfolio\jmc\Security\Dto\JwtDto.class
 com\portfolio\jmc\Security\Service\UsuarioService.class

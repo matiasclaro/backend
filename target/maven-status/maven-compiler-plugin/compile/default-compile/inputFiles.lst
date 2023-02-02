@@ -1,11 +1,13 @@
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Repository\IPersonaRepository.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Entity\hys.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Entity\Experiencia.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Dto\NuevoUsuario.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Service\UserDetailsImpl.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Controller\CHys.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Service\Shys.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Controller\CEducacion.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Repository\IRolRepository.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Controller\PersonaController.java
-C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Interface\IPersonaService.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Jwt\JwtProvider.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Entity\Persona.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Controller\AuthController.java
@@ -13,6 +15,7 @@ C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jm
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\WebConfig.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Repository\REducacion.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Controller\Mensaje.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Dto\DtoHys.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Entity\Educacion.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Entity\Usuario.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Controller\CExperiencia.java
@@ -21,9 +24,11 @@ C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jm
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Service\SEducacion.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Entity\Rol.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Jwt\JwtTokenFilter.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Dto\DtoPersona.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Repository\iUsuarioRepository.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Repository\RExperiencia.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Dto\DtoExperiencia.java
+C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Repository\Rhys.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Dto\DtoEducacion.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Security\Entity\UsuarioPrincipal.java
 C:\Users\Matias\Desktop\Nueva carpeta (3)\backend\src\main\java\com\portfolio\jmc\Service\SExperiencia.java
