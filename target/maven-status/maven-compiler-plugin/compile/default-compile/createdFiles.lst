@@ -1,6 +1,8 @@
 com\portfolio\jmc\Security\MainSecurity.class
+com\portfolio\jmc\Repository\RProyectos.class
 com\portfolio\jmc\Controller\CHys.class
 com\portfolio\jmc\Security\Service\RolService.class
+com\portfolio\jmc\Entity\Proyectos.class
 com\portfolio\jmc\Security\Dto\LoginUsuario.class
 com\portfolio\jmc\Service\SExperiencia.class
 com\portfolio\jmc\Dto\DtoExperiencia.class
@@ -19,6 +21,7 @@ com\portfolio\jmc\Security\Dto\NuevoUsuario.class
 com\portfolio\jmc\Service\ImpPersonaService.class
 com\portfolio\jmc\Security\Jwt\JwtEntryPoint.class
 com\portfolio\jmc\Security\Service\UserDetailsImpl.class
+com\portfolio\jmc\Service\SProyectos.class
 com\portfolio\jmc\Dto\DtoEducacion.class
 com\portfolio\jmc\WebConfig.class
 com\portfolio\jmc\Security\Entity\Usuario.class
@@ -26,8 +29,10 @@ com\portfolio\jmc\Security\Enums\RolNombre.class
 com\portfolio\jmc\Service\SEducacion.class
 com\portfolio\jmc\Service\Shys.class
 com\portfolio\jmc\Repository\Rhys.class
+com\portfolio\jmc\Controller\CProyectos.class
 com\portfolio\jmc\Dto\DtoHys.class
 com\portfolio\jmc\Repository\IPersonaRepository.class
+com\portfolio\jmc\Dto\DtoProyecto.class
 com\portfolio\jmc\Security\Entity\Rol.class
 com\portfolio\jmc\Controller\CEducacion.class
 com\portfolio\jmc\Controller\CExperiencia.class

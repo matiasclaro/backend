@@ -57,15 +57,19 @@ public class CEducacion {
     }
     
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody DtoEducacion dtoeducacion){
+    public ResponseEntity<?> create(@RequestBody DtoEducacion dtoEducacion){
         
-        if(StringUtils.isBlank(dtoeducacion.getNombreE())){
+        if(StringUtils.isBlank(dtoEducacion.getNombreE()))
             return new ResponseEntity(new Mensaje ("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        }
-         if (sEducacion.existByNombreE(dtoeducacion.getNombreE()))
+        
+         if (sEducacion.existByNombreE(dtoEducacion.getNombreE()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
+         
+         if(StringUtils.isBlank(dtoEducacion.getDescripcionE()))
+            return new ResponseEntity(new Mensaje ("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
+        
     
-          Educacion educacion =new Educacion (dtoeducacion.getNombreE(),dtoeducacion.getDescripcionE());
+          Educacion educacion =new Educacion (dtoEducacion.getNombreE(),dtoEducacion.getDescripcionE());
         sEducacion.save(educacion);
         
         return new ResponseEntity(new Mensaje ("Educacion agregada"), HttpStatus.OK);
@@ -83,6 +87,9 @@ public class CEducacion {
         
         if(StringUtils.isBlank(dtoEducacion.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+        
+        if(StringUtils.isBlank(dtoEducacion.getDescripcionE()))
+            return new ResponseEntity(new Mensaje ("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
         
         Educacion educacion = sEducacion.getOne(id).get();
         educacion.setNombreE(dtoEducacion.getNombreE());

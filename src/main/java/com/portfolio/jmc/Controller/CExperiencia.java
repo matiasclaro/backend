@@ -27,7 +27,12 @@ public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
     
-    
+     @GetMapping("/lista")
+    public ResponseEntity<List<Experiencia>> list(){
+        List<Experiencia> list = sExperiencia.list();
+        return new ResponseEntity(list, HttpStatus.OK);
+        
+    }
     
     
     @GetMapping("/detail/{id}")
@@ -39,20 +44,17 @@ public class CExperiencia {
         return new ResponseEntity(experiencia, HttpStatus.OK);
     }
     
-    @GetMapping("/lista")
-    public ResponseEntity<List<Experiencia>> list(){
-        List<Experiencia> list = sExperiencia.list();
-        return new ResponseEntity(list, HttpStatus.OK);
-        
-    }
+   
     
     @PostMapping("/create")
     
     public ResponseEntity<?> create(@RequestBody DtoExperiencia dtoexp){
         if (StringUtils.isBlank(dtoexp.getNombreE()))
-            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.OK);
+            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         if (sExperiencia.existsByNombreE(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
+        if (StringUtils.isBlank(dtoexp.getDescripcionE()))
+            return new ResponseEntity(new Mensaje("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
         
         Experiencia experiencia =new Experiencia (dtoexp.getNombreE(),dtoexp.getDescripcionE());
         sExperiencia.save(experiencia);
@@ -70,6 +72,9 @@ public class CExperiencia {
         
         if(StringUtils.isBlank(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+        
+        if (StringUtils.isBlank(dtoexp.getDescripcionE()))
+            return new ResponseEntity(new Mensaje("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
         
         Experiencia experiencia = sExperiencia.getOne(id).get();
         experiencia.setNombreE(dtoexp.getNombreE());
