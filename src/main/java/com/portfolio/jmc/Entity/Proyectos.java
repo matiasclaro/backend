@@ -15,15 +15,25 @@ public class Proyectos {
     private String nombreP;
     private String descripcionP;
     private String imagenP;
+    private String linkP;
 
     public Proyectos() {
     }
 
-    public Proyectos(String nombreP, String descripcionP, String imagenP) {
+    public Proyectos(String nombreP, String descripcionP, String imagenP, String linkP) {
 
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
         this.imagenP = imagenP;
+        this.imagenP = linkP;
+    }
+
+    public String getLinkP() {
+        return linkP;
+    }
+
+    public void setLinkP(String linkP) {
+        this.linkP = linkP;
     }
 
     public int getId() {

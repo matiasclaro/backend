@@ -22,8 +22,8 @@ public class Shys {
     public Optional<hys> getOne (int id){
     return rhys.findById(id);
 }
-    public Optional<hys> getByNombre(String nombre){
-        return rhys.findByNombre(nombre);
+    public Optional<hys> getByNombreS(String nombreS){
+        return rhys.findByNombreS(nombreS);
     }
     
     
@@ -44,8 +44,8 @@ public class Shys {
     
     }
     
-    public boolean existsByNombre(String nombre){
-    return rhys.existsByNombre(nombre);
+    public boolean existsByNombreS(String nombreS){
+    return rhys.existsByNombreS(nombreS);
     
     }
 }

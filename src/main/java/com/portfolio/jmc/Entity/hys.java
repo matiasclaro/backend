@@ -11,15 +11,17 @@ public class hys {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombre;
-    private int porcentaje;
+    private String nombreS;
+    private int porcentajeS;
+    private String ImagenS;
 
     public hys() {
     }
 
-    public hys(String nombre, int porcentaje) {
-        this.nombre = nombre;
-        this.porcentaje = porcentaje;
+    public hys(String nombreS, int porcentajeS, String imagenS) {
+        this.nombreS = nombreS;
+        this.porcentajeS = porcentajeS;
+        this.ImagenS = imagenS;
     }
 
     public int getId() {
@@ -30,20 +32,28 @@ public class hys {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreS() {
+        return nombreS;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreS(String nombreS) {
+        this.nombreS = nombreS;
     }
 
-    public int getPorcentaje() {
-        return porcentaje;
+    public int getPorcentajeS() {
+        return porcentajeS;
     }
 
-    public void setPorcentaje(int porcentaje) {
-        this.porcentaje = porcentaje;
+    public void setPorcentajeS(int porcentajeS) {
+        this.porcentajeS = porcentajeS;
+    }
+
+    public String getImagenS() {
+        return ImagenS;
+    }
+
+    public void setImagenS(String ImagenS) {
+        this.ImagenS = ImagenS;
     }
 
 

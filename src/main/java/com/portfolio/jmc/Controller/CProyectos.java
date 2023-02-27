@@ -66,7 +66,7 @@ public class CProyectos {
             return new ResponseEntity(new Mensaje("Ese Proyecto existe"), HttpStatus.BAD_REQUEST);
         }
 
-        Proyectos proyectos = new Proyectos(dtoproyecto.getNombreP(), dtoproyecto.getDescripcionP(), dtoproyecto.getImagenP());
+        Proyectos proyectos = new Proyectos(dtoproyecto.getNombreP(), dtoproyecto.getDescripcionP(), dtoproyecto.getImagenP(), dtoproyecto.getLinkP());
         sProyectos.save(proyectos);
 
         return new ResponseEntity(new Mensaje("" + proyectos.getId()), HttpStatus.OK);
@@ -92,6 +92,7 @@ public class CProyectos {
         proyectos.setNombreP(dtoproyecto.getNombreP());
         proyectos.setDescripcionP(dtoproyecto.getDescripcionP());
         proyectos.setImagenP(dtoproyecto.getImagenP());
+        proyectos.setLinkP(dtoproyecto.getLinkP());
         
 
         sProyectos.save(proyectos);
