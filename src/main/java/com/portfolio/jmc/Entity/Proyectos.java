@@ -25,7 +25,7 @@ public class Proyectos {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
         this.imagenP = imagenP;
-        this.imagenP = linkP;
+        this.linkP = linkP;
     }
 
     public String getLinkP() {
