@@ -59,17 +59,17 @@ public class CEducacion {
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoEducacion dtoEducacion){
         
-        if(StringUtils.isBlank(dtoEducacion.getNombreE()))
+        if(StringUtils.isBlank(dtoEducacion.getNombreEdu()))
             return new ResponseEntity(new Mensaje ("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
-         if (sEducacion.existByNombreE(dtoEducacion.getNombreE()))
+         if (sEducacion.existByNombreEdu(dtoEducacion.getNombreEdu()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
          
-         if(StringUtils.isBlank(dtoEducacion.getDescripcionE()))
+         if(StringUtils.isBlank(dtoEducacion.getDescripcionEdu()))
             return new ResponseEntity(new Mensaje ("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
         
     
-          Educacion educacion =new Educacion (dtoEducacion.getNombreE(),dtoEducacion.getDescripcionE());
+          Educacion educacion =new Educacion (dtoEducacion.getNombreEdu(),dtoEducacion.getDescripcionEdu(), dtoEducacion.getImgEdu());
         sEducacion.save(educacion);
         
         return new ResponseEntity(new Mensaje ("Educacion agregada"), HttpStatus.OK);
@@ -82,18 +82,19 @@ public class CEducacion {
         if(!sEducacion.existById(id))
             return new ResponseEntity(new Mensaje("El id no existe"),HttpStatus.NOT_FOUND);
        
-        if(sEducacion.existByNombreE(dtoEducacion.getNombreE()) && sEducacion.getByNombreE(dtoEducacion.getNombreE()).get().getId()!=id)
+        if(sEducacion.existByNombreEdu(dtoEducacion.getNombreEdu()) && sEducacion.getByNombreEdu(dtoEducacion.getNombreEdu()).get().getId()!=id)
             return new ResponseEntity(new Mensaje("Esa educacion existe"), HttpStatus.BAD_REQUEST);
         
-        if(StringUtils.isBlank(dtoEducacion.getNombreE()))
+        if(StringUtils.isBlank(dtoEducacion.getNombreEdu()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
-        if(StringUtils.isBlank(dtoEducacion.getDescripcionE()))
+        if(StringUtils.isBlank(dtoEducacion.getDescripcionEdu()))
             return new ResponseEntity(new Mensaje ("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
         
         Educacion educacion = sEducacion.getOne(id).get();
-        educacion.setNombreE(dtoEducacion.getNombreE());
-        educacion.setDescripcionE(dtoEducacion.getDescripcionE());
+        educacion.setNombreEdu(dtoEducacion.getNombreEdu());
+        educacion.setDescripcionEdu(dtoEducacion.getDescripcionEdu());
+        educacion.setImgEdu(dtoEducacion.getImgEdu());
         
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"),HttpStatus.OK);

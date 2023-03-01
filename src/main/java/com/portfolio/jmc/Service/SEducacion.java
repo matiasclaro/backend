@@ -23,8 +23,8 @@ public class SEducacion {
         return rEducacion.findById(id);
     }
 
-    public Optional<Educacion> getByNombreE(String nombreE) {
-        return rEducacion.findByNombreE(nombreE);
+    public Optional<Educacion> getByNombreEdu(String nombreEdu) {
+        return rEducacion.findByNombreEdu(nombreEdu);
     }
 
     public void save(Educacion educacion) {
@@ -39,8 +39,8 @@ public class SEducacion {
         return rEducacion.existsById(id);
     }
 
-    public boolean existByNombreE(String nombreE) {
-        return rEducacion.existsByNombreE(nombreE);
+    public boolean existByNombreEdu(String nombreEdu) {
+        return rEducacion.existsByNombreEdu(nombreEdu);
     }
 
 }
