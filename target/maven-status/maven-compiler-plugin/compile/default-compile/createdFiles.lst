@@ -21,7 +21,6 @@ com\portfolio\jmc\Security\Dto\NuevoUsuario.class
 com\portfolio\jmc\Service\ImpPersonaService.class
 com\portfolio\jmc\Security\Jwt\JwtEntryPoint.class
 com\portfolio\jmc\Security\Service\UserDetailsImpl.class
-.netbeans_automatic_build
 com\portfolio\jmc\Service\SProyectos.class
 com\portfolio\jmc\Dto\DtoEducacion.class
 com\portfolio\jmc\WebConfig.class
